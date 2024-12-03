@@ -1,181 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essence of Health Chiropractic</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-        :root {
-          --main-bg-color: white;
-          --main-accent-color: #044C64;
-          --photo-size: 200px;
-        }
-        @media (max-width : 396px) {
-            :root {
-                --margin-size: 10px;
-                --photo-size: 100%;
-            }
-        }
-        h1,
-        h2,
-        h3 {
-            font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-        h1{
-          font-size: 40px;
-        }
-        body {
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 1.6;
-            font-size: 18px;
-            padding: 0;
-            background-color: white;
-            color: #333;
-            margin: 0px 0px;
-        }
-        header {
-            background: var(--main-bg-color);
-            color: var(--main-accent-color);
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #333;
-        }
-        nav a {
-            color: #fff;
-            padding: 0.8rem 1.2rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background: #444;
-        }
-        section {
-            padding: 2rem;
-        }
-        .services, .contact {
-            background: #fff;
-            margin: 1rem 0;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-        }
-        .footer {
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-            text-align: center;
-            background: var(--main-bg-color);
-            color: var(--main-accent-color);
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-        .header-info {
-          margin: 0px clamp(10px, 5%, 80px);
-          font-family: "Nunito", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 14px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center; 
-          padding: 10px 20px; 
-          background-color: var(--main-bg-color);
-          border-bottom: 1px solid var(--main-accent-color);
-        }
-        .group {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 20px;
-        }
-        .content{
-          margin: 0px clamp(10px, 5%, 80px);
-        }
-        .post-thumb {
-            float: left;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essence of Health Chiropractic</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-        }
-        .post-thumb img {
-            display: block;
-            max-height: 300px;
-            width: var(--photo-size);
-            object-fit: contain;
-        }
-    </style>
+    :root {
+      --main-bg-color: white;
+      --main-accent-color: #044C64;
+      --photo-size: 200px;
+    }
+
+    @media (max-width : 396px) {
+      :root {
+        --margin-size: 10px;
+        --photo-size: 100%;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    body {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 18px;
+      padding: 0;
+      background-color: white;
+      color: #333;
+      margin: 0px 0px;
+    }
+
+    header {
+      background: var(--main-bg-color);
+      color: var(--main-accent-color);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .services,
+    .contact {
+      background: #fff;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    .footer {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      background: var(--main-bg-color);
+      color: var(--main-accent-color);
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .header-info {
+      margin: 0px clamp(10px, 5%, 80px);
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: var(--main-bg-color);
+      border-bottom: 1px solid var(--main-accent-color);
+    }
+
+    .group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .content {
+      margin: 0px clamp(10px, 5%, 80px);
+    }
+
+    .post-thumb {
+      float: left;
+
+    }
+
+    .post-thumb img {
+      display: block;
+      max-height: 300px;
+      width: var(--photo-size);
+      object-fit: contain;
+    }
+
+    @media (max-width: 520px) {
+      .post-thumb img {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <div class="header-info">
-          <div class="group">
-              <a href="mailto:kasiadc@yahoo.com">kasiadc@yahoo.com</a>
-              <a href="tel:+14083150700">(408) 315-0700</a>
-              <p>1609 Meridian Avenue, San Jose, CA 95125</p>
-          </div>
-          <div class="group">
-              <!--<p>links to external websites</p>-->
-          </div>
-        </div>
-        <h1>Essence of Health Chiropractic</h1>
-        <p>Your trusted partner for health and wellness in San Jose, CA</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#scenar">Scenar Therapy</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="content">
-        <section id="about" class="services">
-            <div class="post-thumb"><img src="headshot.jpg" style="padding-right:20px"/></div>
-            <div>
-                <h2>About Dr. Kasia Wojsiat</h2>
-                <p>Dr. Wojsiat, a certified Chiropractic Doctor, has dedicated her career to improving the health and wellness of her community. After earning a doctorate in Chiropractic, she focused on a holistic approach combining chiropractic care, nutrition, and exercise to optimize patient outcomes.</p>
-            </div>
-        </section>
-        <section id="services" class="services">
-          <div>
-            <h2>Our Services</h2>
-            <ul>
-                <li><strong>New Patient Exam:</strong> Comprehensive health assessment and chiropractic adjustment.</li>
-                <li><strong>Chiropractic Adjustment:</strong> Personalized treatments to alleviate pain and enhance mobility.</li>
-                <li><strong>Extended Treatment:</strong> In-depth sessions for targeted muscle work and rehabilitation exercises.</li>
-                <li><strong>Scenar Therapy:</strong> Cutting-edge technology for pain relief and recovery enhancement.</li>
-            </ul>
-          </div>
-        </section>
-        <section id="scenar" class="services">
-          <div>
-            <h2>SCENAR Therapy</h2>
-            <p>The SCENAR is a non-invasive, safe method of relieving pain by stimulating the central nervous system using gentle biofeedback. The device re-educates and encourages the body to powerfully use its own internal pharmacy of bioactive substances, especially neuro-peptides. SCENAR therapy in not simply one-way communication like most electro-therapies. SCENAR tunes into the body’s nervous system biofeedback and it understands the body’s needs from sophisticated software that interprets the body’s own signals to stimulate the body’s own healing process.</p>
-          </div>
-            <div class="post-thumb"><img src="scenar.png"  style="padding-left:20px"/></div>
-        </section>
-        <section id="contact" class="contact">
-          <div>
-            <h2>Contact Us</h2>
-              <p><strong>Address:</strong> 1609 Meridian Avenue, San Jose, CA 95125</p>
-            <p><strong>Email:</strong> <a href="mailto:kasiadc@yahoo.com">kasiadc@yahoo.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+14083150700">(408) 315-0700</a></p>
-          </div>
-        </section>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2024 Essence of Health Chiropractic. All rights reserved.</p>
-    </footer>
-</body>
-</html>
 
+<body>
+  <header>
+    <div class="header-info">
+      <div class="group">
+        <a href="mailto:kasiadc@yahoo.com">kasiadc@yahoo.com</a>
+        <a href="tel:+14083150700">(408) 315-0700</a>
+        <p>1609 Meridian Avenue, San Jose, CA 95125</p>
+      </div>
+      <div class="group">
+        <!--<p>links to external websites</p>-->
+      </div>
+    </div>
+    <h1>Essence of Health Chiropractic</h1>
+    <p>Your trusted partner for health and wellness in San Jose, CA</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#scenar">Scenar Therapy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="content">
+    <section id="about" class="services">
+      <div class="post-thumb"><img src="headshot.jpg" style="padding-right:20px" /></div>
+      <div>
+        <h2>About Dr. Kasia Wojsiat</h2>
+        <p>Dr. Wojsiat, a certified Chiropractic Doctor, has dedicated her career to improving the health and wellness
+          of her community. After earning a doctorate in Chiropractic, she focused on a holistic approach combining
+          chiropractic care, nutrition, and exercise to optimize patient outcomes.</p>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div>
+        <h2>Our Services</h2>
+        <ul>
+          <li><strong>New Patient Exam:</strong> Comprehensive health assessment and chiropractic adjustment.</li>
+          <li><strong>Chiropractic Adjustment:</strong> Personalized treatments to alleviate pain and enhance mobility.
+          </li>
+          <li><strong>Extended Treatment:</strong> In-depth sessions for targeted muscle work and rehabilitation
+            exercises.</li>
+          <li><strong>Scenar Therapy:</strong> Cutting-edge technology for pain relief and recovery enhancement.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="scenar" class="services">
+      <div>
+        <h2>SCENAR Therapy</h2>
+        <p>The SCENAR is a non-invasive, safe method of relieving pain by stimulating the central nervous system using
+          gentle biofeedback. The device re-educates and encourages the body to powerfully use its own internal pharmacy
+          of bioactive substances, especially neuro-peptides. SCENAR therapy in not simply one-way communication like
+          most electro-therapies. SCENAR tunes into the body’s nervous system biofeedback and it understands the body’s
+          needs from sophisticated software that interprets the body’s own signals to stimulate the body’s own healing
+          process.</p>
+      </div>
+      <div class="post-thumb"><img src="scenar.png" style="padding-left:20px" /></div>
+    </section>
+    <section id="contact" class="contact">
+      <div>
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 1609 Meridian Avenue, San Jose, CA 95125</p>
+        <p><strong>Email:</strong> <a href="mailto:kasiadc@yahoo.com">kasiadc@yahoo.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+14083150700">(408) 315-0700</a></p>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Essence of Health Chiropractic. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
