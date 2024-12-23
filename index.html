@@ -10,14 +10,14 @@
 
     :root {
       --main-bg-color: white;
-      --main-accent-color: #044C64;
+      --main-accent-color: #06402B;
       --photo-size: 200px;
     }
 
     @media (max-width : 396px) {
       :root {
         --margin-size: 10px;
-        --photo-size: 100%;
+        --photo-size: 80%;
       }
     }
 
@@ -28,6 +28,7 @@
       font-optical-sizing: auto;
       font-weight: 400;
       font-style: normal;
+      color: var(--main-accent-color);
     }
 
     h1 {
@@ -58,7 +59,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      background: #333;
+      background: var(--main-accent-color);
     }
 
     nav a {
