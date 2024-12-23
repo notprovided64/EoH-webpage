@@ -57,6 +57,7 @@
     nav {
       display: flex;
       justify-content: center;
+      text-align: center;
       background: #333;
     }
 
@@ -64,6 +65,9 @@
       color: #fff;
       padding: 0.8rem 1.2rem;
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
 
     nav a:hover {
@@ -124,8 +128,7 @@
     }
 
     .post-thumb {
-      float: left;
-
+      float: top;
     }
 
     .post-thumb img {
@@ -135,10 +138,29 @@
       object-fit: contain;
     }
 
+    .mobile-only {
+      display: none;
+    }
+
+    .desktop-only {
+      display: block;
+    }
+
     @media (max-width: 520px) {
-      .post-thumb img {
+      .mobile-only {
+        display: block;
+      }
+
+      .desktop-only {
         display: none;
       }
+
+      < !---->< !--.post-thumb img {
+        -->< !-- display: none;
+        -->< !--
+      }
+
+      -->
     }
   </style>
 </head>
@@ -166,12 +188,18 @@
   </nav>
   <div class="content">
     <section id="about" class="services">
-      <div class="post-thumb"><img src="headshot.jpg" style="padding-right:20px" /></div>
+      <div class="desktop-only">
+        <div class="post-thumb"><img src="headshot.jpg" style="padding-right:20px" /></div>
+      </div>
+
       <div>
         <h2>About Dr. Kasia Wojsiat</h2>
         <p>Dr. Wojsiat, a certified Chiropractic Doctor, has dedicated her career to improving the health and wellness
           of her community. After earning a doctorate in Chiropractic, she focused on a holistic approach combining
           chiropractic care, nutrition, and exercise to optimize patient outcomes.</p>
+        <div class="mobile-only">
+          <div class="post-thumb"><img src="headshot.jpg" style="margin: 0 auto; padding: 5px;" /></div>
+        </div>
       </div>
     </section>
     <section id="services" class="services">
@@ -190,14 +218,23 @@
     <section id="scenar" class="services">
       <div>
         <h2>SCENAR Therapy</h2>
+
+        <div class="mobile-only">
+          <div class="post-thumb"><img src="scenar.png" style="transform: rotate(-90deg);margin: 0 auto;" /></div>
+        </div>
+
         <p>The SCENAR is a non-invasive, safe method of relieving pain by stimulating the central nervous system using
           gentle biofeedback. The device re-educates and encourages the body to powerfully use its own internal pharmacy
           of bioactive substances, especially neuro-peptides. SCENAR therapy in not simply one-way communication like
           most electro-therapies. SCENAR tunes into the body’s nervous system biofeedback and it understands the body’s
           needs from sophisticated software that interprets the body’s own signals to stimulate the body’s own healing
-          process.</p>
+          process. Click <a href="https://ritmscenarusa.com/">here</a> for more details.</p>
       </div>
-      <div class="post-thumb"><img src="scenar.png" style="padding-left:20px" /></div>
+
+      <div class="desktop-only">
+        <div class="post-thumb"><img src="scenar.png" style="padding-left:20px" /></div>
+      </div>
+
     </section>
     <section id="contact" class="contact">
       <div>
